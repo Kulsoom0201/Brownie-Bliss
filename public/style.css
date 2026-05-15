@@ -770,6 +770,24 @@ footer {
   font-family: 'DM Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#contact:target {
+  animation: contactHighlight 1s ease;
+}
+
+@keyframes contactHighlight {
+  0% {
+    box-shadow: 0 0 0 9999px rgba(201, 169, 110, 0.08);
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}
+
 /* CART SIDEBAR */
 .cart-overlay {
   position: fixed;
