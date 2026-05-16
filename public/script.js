@@ -613,6 +613,20 @@ function addBrownieToCart() {
     openCart();
 }
 
+function addCookieToCart() {
+    const item = {
+        id: "cookie-choco-chip",
+        name: "Choco Chip Cookies (Box of 6)",
+        price: 250,
+        img: "https://www.shugarysweets.com/wp-content/uploads/2020/05/chocolate-chip-cookies-recipe.jpg",
+        emoji: "🍪",
+        category: "cookies",
+        qty: 1
+    };
+    addToCart(item);
+    openCart();
+}
+
 // --- UTILITIES ---
 function showToast(msg) {
     const toast = document.getElementById('toast');

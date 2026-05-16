@@ -403,11 +403,75 @@
         </div>
       </div>
 
+      <!-- SLIDE 4: COOKIES -->
+      <div class="bday-slide" style="flex: 0 0 100%; scroll-snap-align: start; padding: 0 30px;">
+        <div style="max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+          <div class="birthday-visual">
+            <img id="cookieImg" src="https://www.shugarysweets.com/wp-content/uploads/2020/05/chocolate-chip-cookies-recipe.jpg"
+              alt="Cookies"
+              style="width: 100%; height: 550px; object-fit: cover; border-radius: 4px; box-shadow: var(--shadow);">
+          </div>
+          <div class="birthday-card"
+            style="background: var(--white); padding: 50px; border-radius: 4px; box-shadow: var(--shadow); border-top: 5px solid var(--gold);">
+            <span class="section-label">Freshly Baked</span>
+            <h2 class="section-title" style="margin-bottom: 20px;">Gourmet <em>Cookies</em></h2>
+            <p
+              style="margin-bottom: 30px; color: var(--text-mid); font-family: 'Cormorant Garamond', serif; font-size: 18px;">
+              Golden, crispy on the edges, and chewy in the middle. Our cookies are packed with premium chocolate chips and baked to perfection.
+            </p>
+    
+            <div style="margin-bottom: 24px;">
+              <label
+                style="display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; font-weight: 700;">Select Variety</label>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <button class="filter-tab active">Choco Chip</button>
+                <button class="filter-tab">Double Choco</button>
+                <button class="filter-tab">Oatmeal Raisin</button>
+                <button class="filter-tab">Almond Biscotti</button>
+                <button class="filter-tab">Red Velvet</button>
+                <button class="filter-tab">Assorted</button>
+              </div>
+            </div>
+    
+            <div style="margin-bottom: 30px;">
+              <label
+                style="display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; font-weight: 700;">Pack Size</label>
+              <div style="display: flex; gap: 15px;">
+                <button class="filter-tab">Box of 2</button>
+                <button class="filter-tab active">Box of 6</button>
+                <button class="filter-tab">Box of 12</button>
+                <button class="filter-tab">Gift Tin</button>
+              </div>
+            </div>
+    
+            <div
+              style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 1px solid var(--cream-dark);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div>
+                  <span style="display: block; font-size: 12px; color: var(--text-mid); opacity: 0.7;">Pricing starts from</span>
+                  <span
+                    style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--brown-dark);">₹ 250</span>
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <button class="hero-cta" style="padding: 14px; font-size: 12px;" onclick="addCookieToCart()">
+                  Add to Cart 🛒
+                </button>
+                <button class="hero-cta" style="padding: 14px; font-size: 12px; background: var(--brown-dark); color: var(--white);" onclick="openCheckout()">
+                  Order Now &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Slider Navigation Dots -->
     <div style="display: flex; justify-content: center; gap: 10px; margin-top: 30px;">
       <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--gold); cursor: pointer;"></div>
+      <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--cream-dark); border: 1px solid var(--gold); cursor: pointer;"></div>
       <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--cream-dark); border: 1px solid var(--gold); cursor: pointer;"></div>
       <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--cream-dark); border: 1px solid var(--gold); cursor: pointer;"></div>
     </div>
