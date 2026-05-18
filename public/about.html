@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Brownie Bliss</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){try{var t=localStorage.getItem('bb_theme')||'light';if(t==='dark')document.documentElement.classList.add('dark');}catch(_){}}());
+  </script>
+</head>
+<body>
 <!-- ANNOUNCEMENT -->
 <div class="announcement">
   ✨ &nbsp; DELICIOUS HOMEMADE BROWNIES, CAKES & COOKIES
@@ -7,7 +19,7 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <a href="index.html" class="logo">
       <span class="logo-name">Brownie Bliss</span>
       <span class="logo-sub">Homemade Treats</span>
@@ -31,7 +43,14 @@
 
   </div>
 </header>
-
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#home">Home</a>
+  <a href="index.html#products">Products</a>
+  <a href="index.html#birthday">Birthday Cakes</a>
+  <a href="favourites.html">Favourites</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="track.html">Track Order</a>
+</div>
 <!-- ABOUT SECTION -->
  <link rel="stylesheet" href="style.css">
 <section class="about-section">
@@ -254,3 +273,6 @@
   </div>
 
 </footer>
+  <script src="script.js"></script>
+</body>
+</html>

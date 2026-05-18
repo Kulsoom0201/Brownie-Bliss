@@ -2551,6 +2551,13 @@ a.logo {
   flex-direction:column;
   background:white;
   padding:15px;
+  position: sticky; 
+  top: 0;            
+  z-index: 999; 
+}
+.mobile-menu.show {
+  display: flex !important;
+  flex-direction: column;
 }
 
 .mobile-menu a{
@@ -2560,31 +2567,16 @@ a.logo {
   border-bottom:1px solid #eee;
 }
 
-@media (max-width:900px){
-
-  nav{
-    display:none;
+@media (max-width: 900px) {
+  nav {
+    display: none !important;  /* add !important */
   }
 
-  .menu-toggle{
-    display:block;
+  .menu-toggle {
+    display: block !important;
+    order: -1;
+    margin-right: 15px;
   }
-
-  .mobile-menu.show{
-    display:flex;
-    flex-direction:column;
-  }
-  .header-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.menu-toggle{
-  order:-1;
-  margin-right:15px;
-}
-
 }
 html {
   scroll-behavior: smooth;

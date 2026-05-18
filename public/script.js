@@ -1111,4 +1111,10 @@ function confirmCustomization() {
     addToCart(cartItem);
     closeCustomizeModal();
     openCart();
+    // Close mobile menu when any link inside it is clicked
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.remove('show');
+  });
+});
 }
